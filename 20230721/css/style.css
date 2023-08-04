@@ -44,17 +44,20 @@ img {
 
 .menu {
     display: flex;
+    justify-content: space-between;
     max-width: 980px;
-    margin: 0 auto;
+    margin: 20px;
 }
 
 ul {
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-    max-width: 960px;
     margin-left: auto;
-    font-size: small;
+    font-size: medium;
+    align-items: center;
+}
+
+li {
+    padding: 5px 20px;
 }
 
 li + li {
@@ -64,11 +67,21 @@ li + li {
 @media screen and (max-width: 767px) {
     .menu {
         display: block;
+        padding: 0 10px;
     }
-    .li {
+
+    ul {
+        display: block;
+    }
+
+    li {
         width: 100%;
+        padding: 5px 0;
         border-bottom: 1px solid #3b3a3a;
-        border-right: none;
+    }
+
+    li + li {
+        border-left: 0px;
     }
 }
 
@@ -83,10 +96,28 @@ li + li {
 .wrap div {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 30%;
     height: 300px;
     margin-bottom: 20px;
     background-color: blue;
+    color: #fff;
+}
+
+.wrap2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.wrap2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 300px;
+    margin-bottom: 20px;
+    background-color: red;
     color: #fff;
 }
