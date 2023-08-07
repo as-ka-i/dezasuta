@@ -46,7 +46,7 @@ img {
     display: flex;
     justify-content: space-between;
     max-width: 980px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 ul {
