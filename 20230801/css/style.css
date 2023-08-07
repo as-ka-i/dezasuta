@@ -43,7 +43,6 @@ img {
 }
 
 .service_menu {
-    max-width: 980;
     background-color: #eeeeee;
 }
 
@@ -62,9 +61,21 @@ h1 {
     margin: 0 auto;
 }
 
-p {
-    display: flex;
-    justify-content: space-between;
-    max-width: 980px;
+.pic_list {
     margin: 0 auto;
+    background-color: white;
+    margin: 10px;
+}
+
+h2 {
+    color: darkcyan;
+    border-left: 8px solid darkcyan;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 400px) {
+    .pic_frame {
+        display: block;
+        width: 100%;
+    }
 }
