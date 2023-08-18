@@ -65,6 +65,7 @@ h1 {
     margin: 0 auto;
     background-color: white;
     margin: 10px;
+    width: 30%;
 }
 
 h2 {
@@ -74,8 +75,13 @@ h2 {
 }
 
 @media screen and (max-width: 400px) {
+    img {
+        width: 100%;
+    }
     .pic_frame {
         display: block;
+    }
+    .pic_list {
         width: 100%;
     }
 }
