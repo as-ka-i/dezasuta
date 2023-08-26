@@ -25,6 +25,14 @@ li {
         "ＭＳ 明朝", serif;
 }
 
+html {
+    scroll-behavior: smooth; /*スムーススクロール*/
+}
+
+.selector {
+    font-feature-settings: "palt"; /*追加のCSSリセット　メトリクス仕様*/
+}
+
 a {
     /*下線を消す*/
     text-decoration: none;
@@ -47,18 +55,15 @@ img {
     border: none;
 }
 
-body {
-    background: gray;
-}
-
+/*ヘッダー*/
 .header_wrap {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px 7% 0 3%;
 }
@@ -68,22 +73,125 @@ body {
 
 .pc_nav ul {
     display: flex;
+    justify-content: space-between;
 }
 
 .pc_nav ul li {
-    width: 105px;
-    margin-left: 55px;
+    min-width: 105px;
     color: #fff;
     font-weight: bold;
     font-size: 18px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
         "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
+
+.pc_nav ul li + li {
+    margin-left: 55px;
+}
+
+/*スマホ版メニューは消す*/
+
+.sp_nav,
+.sp_btn {
+    display: none;
+}
+
+@media screen and (max-width: 1100px;) {
+    .sp_btn.open;
+}
+.pc_nav {
+    display: none;
+}
+
+/*ハンバーガー*/
+.sp_btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: block;
+    height: 23px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.sp_btn span {
+    position: absolute;
+    top: 10px;
+    display: block;
+    width: 33px;
+    height: 3px;
+    border-radius: 2px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.sp_btn span::before,
+.sp_btn span::after {
+    position: absolute; /*親要素にposition: word-spacing:;をつけないといけない*/
+    content: "";
+    display: block;
+    width: 33px;
+    height: 3px;
+    border-radius: 2px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.sp_btn span::before {
+    bottom: 10px;
+}
+
+.sp_btn span::after {
+    top: 10px;
+}
+
+/*ハンバーガーメニューを閉じる*/
+.sp_btn.open span {
+    background: transparent;
+}
+.sp_btn.sp_btn.open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+.sp_btn.open span::after {
+    top: 0;
+    transform: rotate(135deg);
+}
+/*ハンバーガーメニュー*/
+.sp_nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /*全画面*/
+    background: rgba(0, 0, 0, 0.8); /*80%の透過性でドロップシャドウ*/
+    z-index: 1; /**/
+}
+.sp_nav ul {
+    display: flex;
+    flex-direction: column; /*横並びか縦並びcolumは縦並びの意味*/
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.sp_nav ul li {
+    padding: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+/*.sp_nav{
+ display: block;
+ }*/
+
 /*ここからメインコンテンツ*/
 
 main {
     background-color: #e8d9bf;
 }
+
 /*コンセプト*/
 .concept {
     padding-top: 100px;
@@ -98,11 +206,25 @@ main {
 .concept p:nth-child(2) {
     margin-bottom: 48px;
     font-size: 82px;
+    line-height: 96px; /*テキストの行間を設定するために使用*/
 }
 
 .concept p:last-child {
     margin-bottom: 48px;
     font-size: 23px;
+    line-height: 30px; /*テキストの行間を設定するために使用*/
+}
+
+@media screen and (max-width: 1023px;) {
+    .concept p:first-child {
+        font-size: 17px;
+    }
+    .concept p:nth-child(2) {
+        font-size: 38px;
+    }
+    .concept p:last-child {
+        font-size: 16px;
+    }
 }
 
 /*aboutus*/
@@ -150,16 +272,22 @@ main {
     width: 250px;
 }
 
-.about_block h3 {
+.about_block .title {
     margin-bottom: 35px;
     font-size: 44px;
     font-weight: normal;
     line-height: 1.38;
 }
 
-.about_block p {
+.about_block .content {
     font-size: 16px;
     line-height: 1.6;
+}
+
+@media screen and (max-width: 1023px) {
+    .about_block.taitle {
+        font-size: 36px;
+    }
 }
 
 /*menu*/
@@ -238,18 +366,22 @@ main {
     background-color: #fff;
 }
 
-ul li div {
-    margin: -1em 0 0 7em;
+.event_block ul li a {
     justify-content: center;
     color: #4f260b;
     font-size: 23px;
     text-decoration: underline;
 }
 
-ul li span {
+.event_block ul li time {
+    margin-right: 55px;
     justify-content: center;
     color: #4f260b;
     font-size: 23px;
+}
+
+.event_block ul li + li {
+    margin-top: 20px;
 }
 
 /*access*/
@@ -275,19 +407,24 @@ footer {
     margin: 0 auto 36px;
 }
 
-.footer_block .footer_imag {
-    width: 200px;
-    margin-left: 60px;
+.footer_block .footer_img {
+    width: 226px;
+    margin-right: 60px;
 }
-ul li {
+.footer_block ul li {
     display: block;
     font-size: 20px;
     color: #000000;
 }
 
-.footer_copy p {
+.footer_block ul li + li {
+    margin-top: 20px;
+}
+
+.footer_copy {
     text-align: center;
-    color: #e8d9bf;
+    color: #000;
+    font-size: 16px;
 }
 
 /*PAGETOP*/
