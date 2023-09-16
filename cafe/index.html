@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- jQuery①②はcssの上
+slickはjqueryの下 -->
 </head>
 
 <body>
@@ -90,8 +92,7 @@
                     こだわりのコーヒー</p>
 
                 <p class="contents">
-                    サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
-                    サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                    サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
                 </p>
             </div>
         </section>
@@ -123,6 +124,7 @@
 
         <!-- galleryセクション-->
         <section id="gallery" class="gallery">
+
             <h2><img src="images/gallery@2x.png" alt="ギャラリー"></h2>
 
             <div class="gallery_wrap">
@@ -131,11 +133,7 @@
                 <div><img src="images/pc_gallary_03-100.jpg" alt="店内の雰囲気"></div>
                 <div><img src="images/pc_gallary_02-100.jpg" alt="ペンダントライト"></div>
                 <div><img src="images/pc_gallary_01-100.jpg" alt="コーヒーにミルクを注ぐ"></div>
-            </div>
-
-            <div class="sp_gallery">
-                <div><img src="images/mobile_gallery-100.jpg" alt="店内の雰囲気SP">
-                </div>
+                <div><img src="images/pc_gallary_01-100.jpg" alt="コーヒーにミルクを注ぐ"></div>
             </div>
 
         </section>
@@ -198,16 +196,46 @@
                 $('.sp_nav').fadeToggle();
                 $('.sp_btn').toggleClass('open');
             });
-
-            $('.header_slider').slick({
-                autoplay: true,
-                autoplayspeed: 2000,
-                dots: true
-                //arrows: fales
-            });
-
         });
-        <!-- jQueryはbodyの最後に記載する
+
+
+        $('.header_slider').slick({
+            autoplay: true,
+            // 自動再生
+            autoplaySpeed: 2000,
+            // 2秒で動く
+            dots: true,
+            // 行の最後はかんまで区切る
+            arrows: false,
+        });
+
+        $(document).ready(function () {
+            $('.gallery_wrap').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                // autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            // infinite: true,
+                            // dots: true
+                        },
+                    },
+                ],
+            });
+        });
+
+
+
+        //jQueryはbodyの最後に記載する
     </script>
 </body>
 
