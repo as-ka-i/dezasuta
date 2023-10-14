@@ -1,0 +1,144 @@
+/* MVセクション */
+
+.mv_image {
+    position: relative;
+}
+
+.mv_image p {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    font-size: 40px;
+    line-height: 65px;
+    letter-spacing: 10px;
+    background-color: transparent;
+    /* 背景色なし */
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+}
+
+.mv_image img {
+    width: 100%;
+    padding: 60px 0;
+    margin: auto 0;
+}
+
+.concept {
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 5px;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+}
+
+
+/*スクロールダウン全体の場所*/
+.scrolldown1 {
+    /*描画位置※位置は適宜調整してください*/
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    /*全体の高さ*/
+    height: 40px;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown1 span {
+    /*描画位置*/
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    /*テキストの形状*/
+    color: #3a3a50;
+    font-size: 16px;
+}
+
+/* 線の描写 */
+.scrolldown1::after {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    top: 0;
+    /*線の形状*/
+    width: 1px;
+    height: 40px;
+    background: #3a3a50;
+    /*線の動き1.4秒かけて動く。永遠にループ*/
+    animation: pathmove 1.4s ease-in-out infinite;
+    opacity: 0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove {
+    0% {
+        height: 0;
+        top: 0;
+        opacity: 0;
+    }
+    30% {
+        height: 30px;
+        opacity: 1;
+    }
+    100% {
+        height: 0;
+        top: 50px;
+        opacity: 0;
+    }
+}
+
+/* about me セクション */
+.about {
+    position: relative; /*親要素を基準に動く*/
+    display: flex; /*横並び*/
+    justify-content: flex-end; /*中央寄せ*/
+    margin-top: 100px;
+    padding-top: 0;
+    max-width: 1000px;
+}
+
+.about_block{
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.about_block .image img{
+    position: absolute;
+    top: 50%;
+    left:0
+    transform:translateY(-50%)
+}
+
+.about_title h2{
+    font-weight: bold;
+    font-size: 50px;
+    padding-bottom: 50px;
+
+}
+.about_title .name_japanese{
+    font-size: 30px;
+}
+.about_title .name_english{
+    font-size: 20px;
+}
+.about_title .position{
+    font-size: 13px;
+    display: block;
+    padding-top: 5px;
+
+}
+
+.about_title .top_introduction
+{
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 15px;
+}
+
+/* skillsセクション */
+
