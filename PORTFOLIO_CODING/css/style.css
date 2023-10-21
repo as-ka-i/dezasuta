@@ -1,12 +1,13 @@
 /* MVセクション */
 
-.mv_image {
+.mv_block {
     position: relative;
+    width: 100%;
 }
 
 .mv_image p {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 65%;
     font-size: 40px;
     line-height: 65px;
@@ -20,29 +21,29 @@
 
 .mv_image img {
     width: 100%;
-    padding: 60px 0;
+    padding: 80px 0;
     margin: auto 0;
+    opacity: 0.8;
 }
 
 .concept {
     font-size: 20px;
     line-height: 50px;
     letter-spacing: 5px;
-    align-items: center;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 20px;
+    padding-bottom: 50px;
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
         "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
         "ＭＳ 明朝", serif;
 }
-
 
 /*スクロールダウン全体の場所*/
 .scrolldown1 {
     /*描画位置※位置は適宜調整してください*/
     position: absolute;
     left: 50%;
-    bottom: 5px;
+    bottom: -100px;
     /*全体の高さ*/
     height: 40px;
 }
@@ -94,51 +95,231 @@
 /* about me セクション */
 .about {
     position: relative; /*親要素を基準に動く*/
+}
+
+.about_block {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 15%;
     display: flex; /*横並び*/
-    justify-content: flex-end; /*中央寄せ*/
-    margin-top: 100px;
-    padding-top: 0;
+    justify-content: flex-end;
+    padding-top: 100px;
+    padding-bottom: 100px;
     max-width: 1000px;
 }
 
-.about_block{
-    width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.about_block .image img{
+.about_block .image img {
     position: absolute;
     top: 50%;
-    left:0
-    transform:translateY(-50%)
+    width: 50%;
+    left: 0 transform；translateY(-50%);
 }
 
-.about_title h2{
+.about_block .about_title {
+    width: 100%;
+    padding-top: 200px;
+    padding-left: 100px;
+}
+
+.about_title h2 {
     font-weight: bold;
     font-size: 50px;
     padding-bottom: 50px;
-
 }
-.about_title .name_japanese{
+.about_title .name_japanese {
     font-size: 30px;
 }
-.about_title .name_english{
+.about_title .name_english {
     font-size: 20px;
 }
-.about_title .position{
+.about_title .position {
     font-size: 13px;
     display: block;
     padding-top: 5px;
-
 }
 
-.about_title .top_introduction
-{
+.about_title .top_intro {
     font-size: 16px;
     line-height: 30px;
     padding-top: 15px;
 }
+.about_title .more {
+    padding-top: 50px;
+    margin-left: 70%;
+    width: 70px;
+    height: 17px;
+}
 
 /* skillsセクション */
 
+.skill {
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+.skill h2 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 100px;
+    margin: auto 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.skill_block {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.skill_block .sk {
+    padding-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    background-color: #fff;
+}
+.skill_block .sk_english {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #fff;
+}
+.skill_block .icon {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 35%;
+    width: 35%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.skill_block .text01 {
+    font-size: 14px;
+    line-height: 26px;
+    width: 220px;
+    height: 210px;
+    margin-left: 80px;
+    padding-top: 30px;
+
+    background-color: #fff;
+}
+
+/* worksセクション */
+.work {
+    padding-bottom: 100px;
+}
+
+.work_block h2 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+.work_block ul {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.work_block ul li {
+    margin: 50px;
+}
+
+.work_block .more {
+    padding-top: 50px;
+    margin-left: 90%;
+    width: 70px;
+    height: 17px;
+}
+
+/* contact セクション */
+.contact {
+    padding-bottom: 200px;
+}
+
+.contact_block h2 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 50px;
+    text-align: center;
+    margin: auto;
+}
+.contact_block .contact_text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.c-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.c-form__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.c-form__label,
+.c-form__input {
+    padding: 10px;
+}
+.c-form__label {
+    width: 90%;
+}
+.c-form__input {
+    width: 90%;
+    font-size: 16px;
+    border: solid 1px #3a3a50 border-radius 4px;
+}
+.c-form__input:focus-visible {
+    outline: #f4c891 auto 1px;
+}
+.c-form__required {
+    color: #3a3a50;
+    background-color: #f4c891;
+    border-radius: 4px;
+    padding: 5px 5px;
+    margin: 0 0 0 18px;
+    font-size: 14px;
+}
+textarea.c-form__input {
+    height: 160px;
+}
+.c-form__submit {
+    text-align: center;
+}
+.c-form__submit button {
+    font-size: 16px;
+    color: #3a3a50;
+    background-color: #f4c891;
+    border: solid 1px #f4c891;
+    border-radius: 4px;
+    padding: 5px 32px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.c-form__submit button:hover {
+    color: #fff;
+    background-color: #3a3a50;
+}
+
+@media (min-width: 640px) {
+    .c-form__item {
+        flex-wrap: nowrap;
+    }
+    .c-form__label {
+        width: 40%;
+    }
+    .c-form__input {
+        width: 55%;
+    }
+}

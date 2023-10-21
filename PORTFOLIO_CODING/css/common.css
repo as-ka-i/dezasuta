@@ -69,16 +69,16 @@ img {
     width: 100%;
     /* widthに収める */
     box-sizing: border-box;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    padding-right: 15%;
+    padding-left: 15%;
     background-color: #fff;
 }
 
 .header_wrap h1 {
     font-size: 25px;
-    line-height: 20px;
+    line-height: 25px;
     letter-spacing: 5px;
     text-align: center;
     background-color: #fff;
@@ -186,6 +186,7 @@ img {
     /*ハンバーガーメニュー*/
     .sp_nav {
         position: absolute;
+        z-index: 99;
         top: 0;
         left: 0;
         width: 100%;
@@ -210,3 +211,66 @@ img {
 
 /* ハンバーガーメニューを開いたときにメインビジュアルがそのまま残りメニューがメインビジュアルの下に表示されるのはなぜ？ */
 /*  */
+
+/* フッター セクション */
+
+.footer_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    /* widthに収める */
+    box-sizing: border-box;
+    padding: 50px;
+    padding-right: 10%;
+    padding-left: 10%;
+    background-color: #f4c891;
+}
+
+.footer_logo {
+    margin: 0 auto;
+}
+
+.footer_logo h1 {
+    font-size: 21px;
+    line-height: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    background-color: #f4c891;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer_logo .insta_icon {
+    width: 52px;
+    height: 52px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.footer_copy {
+    padding-top: 30px;
+    font-size: 12px;
+    background-color: #f4c891;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer_block ul {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-color: #f4c891;
+}
+
+.footer_block ul li {
+    font-size: 16px;
+    background-color: #f4c891;
+    text-align: center;
+}
+
+.footer_block ul li + li {
+    margin-left: 55px;
+}

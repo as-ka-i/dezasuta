@@ -20,13 +20,13 @@
         <div class="header_wrap">
             <h1>MORI ASUKA<br>
                 PRTFOLIO </h1>
+
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="#home">Home
-                        </a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About me</a> </li>
-                    <li><a href="#skills">Skills</a> </li>
-                    <li><a href="#works">Works</a></li>
+                    <li><a href="#skill">Skills</a> </li>
+                    <li><a href="#work">Works</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -35,8 +35,8 @@
             <nav class="sp_nav">
                 <ul>
                     <li><a href="#about">About me</a> </li>
-                    <li><a href="#skills">Skills</a> </li>
-                    <li><a href="#works">Works</a></li>
+                    <li><a href="#skill">Skills</a> </li>
+                    <li><a href="#work">Works</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -47,7 +47,7 @@
     <!-- ここからメイン -->
     <main>
         <!-- MVセクション -->
-        <section id="Home" class="mv">
+        <section id="home" class="mv">
 
             <div class="mv_block">
                 <div class="mv_image">
@@ -76,7 +76,7 @@
 
             <div class="about_block">
                 <div class="about_image">
-                    <img src="cording_image/top_introduction2@2x.png" alt="自己紹介写真">
+                    <img src="cording_image/2top_introcuction@2x.png" alt="自己紹介写真">
 
                 </div>
                 <div class="about_title">
@@ -85,7 +85,7 @@
                     <span class="name_english">mori asuka</span>
                     <span class="position">web designer</span>
 
-                    <p class="top_introduction">1988年6月14日生まれ<br>
+                    <p class="top_intro">1988年6月14日生まれ<br>
                         福岡県在住<br>
                         2011年から約７年間医療商社にて勤務<br>
                         2018年より人材紹介会社にて<br>
@@ -93,17 +93,22 @@
                         約200名の転職を成功させる<br>
                         現在はスクールを通じてwebデザインを勉強中
                     </p>
+                    <p class="more"><img src="cording_image/more@2x.png" alt="more表示"></p>
+
                 </div>
             </div>
 
         </section>
 
         <!-- skills セクション -->
-        <section id="skills" class="skills">
-            <div class="skills_block">
+        <section id="skill" class="skill">
 
-                <h2>Skills</h2>
-                <section>
+
+            <h2>Skills</h2>
+
+            <div class="skill_block">
+
+                <section class="skill">
                     <h3 class="sk">デザイン</h3>
                     <p class="sk_english">DESIGN</p>
                     <p class="icon"><img src="cording_image/pc_logo_design@2x.png" alt="デザインアイコン"></p>
@@ -136,8 +141,9 @@
 
 
         <!-- works セクション -->
-        <section id="works" class="works">
-            <div class="works_block">
+        <section id="work" class="work">
+            <div class="work_block">
+                <h2>Works</h2>
                 <ul>
                     <li><img src="cording_image/top_hamburgerframe1_banner_@2x-100.jpg" alt="ハンバーガーのバナー１"></li>
                     <li><img src="cording_image/top_workersframe_banner@2x-100.jpg" alt="WORKSのバナー"></li>
@@ -145,12 +151,83 @@
 
                 </ul>
 
+                <p class="more"><img src="cording_image/more@2x.png" alt="more表示"></p>
+            </div>
+
+        </section>
+
+        <!-- contactセクション -->
+        <section id="contact" class="contact">
+            <div class="contact_block">
+                <h2>Contact</h2>
+                <p class="contact_text">この度は最後までご覧いただき、ありがとうございます。<br>
+                    お仕事のご依頼やご相談、ご不明点などございましたらお気軽にご連絡ください。
+                </p>
+
+                <!-- Googleフォーム -->
+                <form
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSesRZg6uWQQ157T7G6x3lD5wePd87bQa-MY8c-x03TPL1wpEw/formResponse"
+                    method="POST" class="c-form">
+                    <div class="c-form__item">
+                        <label class="c-form__label" for="field-name">貴社名</label>
+                        <input name="entry.865356198" class="c-form__input" id="field-name" type="text" />
+                    </div>
+                    <div class="c-form__item">
+                        <label class="c-form__label" for="name">お名前<span class="c-form__required">必須</span></label>
+                        <input name="entry.1652895192" class="c-form__input" id="name" type="text"
+                            required="required" />
+                    </div>
+                    <div class="c-form__item">
+                        <label class="c-form__label" for="field-mail">メールアドレス<span
+                                class="c-form__required">必須</span></label>
+                        <input name="entry.582297986" class="c-form__input" id="field-mail"
+                            placeholder="sample@gmail.com" type="email" required="required" />
+                    </div>
+                    <div class="c-form__item">
+                        <label class="c-form__label" for="field-number">電話番号</label>
+                        <input name="entry.2026246450" class="c-form__input" id="field-number" type="number" />
+                    </div>
+                    <div class="c-form__item">
+                        <label class="c-form__label" for="field-message">お問い合わせ内容<span
+                                class="c-form__required">必須</span></label>
+                        <textarea name="entry.761471955" class="c-form__input" id="field-message"
+                            required="required"></textarea>
+                    </div>
+                    <div class="c-form__submit">
+                        <button type="submit">送信する</button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+        <!-- フッターセクション-->
+        <footer>
+
+            <div class="footer_block">
+                <ul>
+                    <li><a href="#home">Home
+                        </a></li>
+                    <li><a href="#about">About me</a> </li>
+                    <li><a href="#skill">Skills</a> </li>
+                    <li><a href="#work">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="footer_logo">
+                    <h1>MORI ASUKA<br>
+                        PRTFOLIO </h1>
+
+                    <div class="insta_icon">
+                        <img src="cording_image/pc_logo_insta@2x.png" alt="インスタのアイコン">
+                    </div>
+                    <p class="footer_copy">© 2023 Mori Asuka</p>
+                </div>
 
             </div>
 
 
-
-        </section>
+        </footer>
 
     </main>
 

@@ -477,12 +477,11 @@ main {
 }
 
 /* 矢印 */
-.arrow_right{
-      position: relative;
-    padding-left: :25px;
-
+.arrow_right {
+    position: relative;
+    padding-left: 25px;
 }
-.arrow_right::before{
+.arrow_right::before {
     content: "";
     margin: auto;
     position: absolute;
@@ -496,8 +495,6 @@ main {
     border-right: 3px solid #fff;
     transform: rotate(45deg);
 }
-
-
 
 /*event*/
 .event {
