@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MORI ASUKA PRTFOLIO｜あなたのオモイをすくいます。</title>
     <meta name="description" content="MORIASUKAのPORTFOLIOサイトです。">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/rak2mok.css">
     <link rel="stylesheet" type="text/css" href="css/9-1-1.css">
 </head>
@@ -52,15 +56,21 @@
             <div class="mv_block">
                 <div class="mv_image">
 
-                    <img src="cording_image/PC_main visual@2x-100.jpg" alt="両手">
-                    <p class="title">あなたのオモイを<br>
+                    <img src="images/PC_main visual@2x-100.jpg" alt="両手">
+                    <p class="fade-in fade-in-down title">あなたのオモイを<br>
                         すくいます。</p>
+
+                    <div class="sp_mv_image">
+                        <img src="images/sp_mainvisual@2x.png" alt="SP版両手">
+                    </div>
                 </div>
+
+
 
                 <p class="concept">潜在的な想いを顕在化させるヒヤリングで<br>
                     あなたの想いをカタチにします<br>
-                    デザインで「この商品を届けたい」「想いをつたえたい」<br>
-                    のお気持ちに寄り添い、温もりを感じるデザインを目指します
+                    デザインで<br class="sp_only">「この商品を届けたい」<br class="sp_only">「想いをつたえたい」<br>
+                    のお気持ちに寄り添い、<br class="sp_only">温もりを感じるデザインを目指します
                 </p>
 
 
@@ -76,11 +86,13 @@
 
             <div class="about_block">
                 <div class="about_image">
-                    <img src="cording_image/2top_introcuction@2x.png" alt="自己紹介写真">
+                    <img src="images/2top_introcuction@2x.png" alt="自己紹介写真">
 
                 </div>
                 <div class="about_title">
                     <h2>About me</h2>
+                    <div class="sp_about_image"><img src="images/sp_top_introduction@2x.png" alt="sp版自己紹介写真"></div>
+                    <span class="sp_name_english">mori asuka</span>
                     <span class="name_japanese">森　綾瑞香</span>
                     <span class="name_english">mori asuka</span>
                     <span class="position">web designer</span>
@@ -93,9 +105,10 @@
                         約200名の転職を成功させる<br>
                         現在はスクールを通じてwebデザインを勉強中
                     </p>
-                    <p class="more"><img src="cording_image/more@2x.png" alt="more表示"></p>
+                    <p class="more"><img src="images/more@2x.png" alt="more表示"></p>
 
                 </div>
+
             </div>
 
         </section>
@@ -103,15 +116,16 @@
         <!-- skills セクション -->
         <section id="skill" class="skill">
 
-
+            <div class="skill-obj"><img src="images/sp_skills_dots@2x.png" alt="２つのオレンジドット"></div>
             <h2>Skills</h2>
+
 
             <div class="skill_block">
 
-                <section class="skill">
+                <section>
                     <h3 class="sk">デザイン</h3>
                     <p class="sk_english">DESIGN</p>
-                    <p class="icon"><img src="cording_image/pc_logo_design@2x.png" alt="デザインアイコン"></p>
+                    <p class="icon"><img src="images/pc_logo_design@2x.png" alt="デザインアイコン"></p>
                     <p class="text01">
                         Photoshop・Illustratorを使用し、ヒヤリングに基づいたデザインを作成いたします。デザインを見た方が迷わない、オモイが届くことを大切にお客様の目的が達成できるデザインを目指していきます。
                         またFigmaを用いたデザイン作成も勉強中です。</p>
@@ -120,7 +134,7 @@
                 <section>
                     <h3 class="sk">コーディング</h3>
                     <p class="sk_english">CODING</p>
-                    <p class="icon"><img src="cording_image/pc_logo_cording@2x.png" alt="コーディングアイコン"></p>
+                    <p class="icon"><img src="images/pc_logo_cording@2x.png" alt="コーディングアイコン"></p>
                     <p class="text01">Visual Studio Codeを使用し、コーディングを行います。PC・スマートフォンどちらにも適したWebサイト作りが可能です。Javascript
                         を使用し動きのあるWebサイトも提供できます。適切な動きを入れることでお客様の目的達成により貢献していきたいと考えています。</p>
                 </section>
@@ -128,7 +142,7 @@
                 <section>
                     <h3 class="sk">カメラ撮影</h3>
                     <p class="sk_english">PHOTOGRAPHER</p>
-                    <p class="icon"><img src="cording_image/pc_logo_camera@2x.png" alt="カメラアイコン"></p>
+                    <p class="icon"><img src="images/pc_logo_camera@2x.png" alt="カメラアイコン"></p>
                     <p class="text01">趣味でミラーレスカメラでの撮影を行っています。サイト・バナー掲載のお写真を撮影することもできます。
                         お客様の表情や商品の良さを引き出せるように努めてまいります。
                         作品詳細はabout meのページへ掲載しておりますのでご覧いただけますと幸いです。</p>
@@ -145,91 +159,98 @@
             <div class="work_block">
                 <h2>Works</h2>
                 <ul>
-                    <li><img src="cording_image/top_hamburgerframe1_banner_@2x-100.jpg" alt="ハンバーガーのバナー１"></li>
-                    <li><img src="cording_image/top_workersframe_banner@2x-100.jpg" alt="WORKSのバナー"></li>
-                    <li><img src="cording_image/top_trrrripframe_banner@2x-100.jpg" alt="旅行サイトバナー"></li>
+                    <li><img src="images/top_hamburgerframe1_banner_@2x-100.jpg" alt="ハンバーガーのバナー１"></li>
+                    <li><img src="images/top_workersframe_banner@2x-100.jpg" alt="WORKSのバナー"></li>
+                    <li><img src="images/top_trrrripframe_banner@2x-100.jpg" alt="旅行サイトバナー"></li>
 
                 </ul>
 
-                <p class="more"><img src="cording_image/more@2x.png" alt="more表示"></p>
+                <p class="more"><img src="images/more@2x.png" alt="more表示"></p>
+
+
             </div>
 
         </section>
 
         <!-- contactセクション -->
         <section id="contact" class="contact">
+            <div class="contact-obj1"><img src="images/tpo_dots_contact1@2x.png" alt="２つのオレンジドット"></div>
+            <div class="contact-obj2"><img src="images/top_dots_contact2@2x.png" alt="２つのオレンジドット"></div>
+
+
             <div class="contact_block">
                 <h2>Contact</h2>
-                <p class="contact_text">この度は最後までご覧いただき、ありがとうございます。<br>
-                    お仕事のご依頼やご相談、ご不明点などございましたらお気軽にご連絡ください。
+                <p class="contact_text">この度は最後までご覧いただき、<br class="sp_only">ありがとうございます。<br>
+                    お仕事のご依頼やご相談、ご不明点など<br class="sp_only">ございましたらお気軽にご連絡ください。
                 </p>
 
                 <!-- Googleフォーム -->
                 <form
                     action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSesRZg6uWQQ157T7G6x3lD5wePd87bQa-MY8c-x03TPL1wpEw/formResponse"
-                    method="POST" class="c-form">
+                    method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="c-form">
+
                     <div class="c-form__item">
                         <label class="c-form__label" for="field-name">貴社名</label>
-                        <input name="entry.865356198" class="c-form__input" id="field-name" type="text" />
+                        <input name="entry.590683472" class="c-form__input" id="field-name" type="text" />
                     </div>
                     <div class="c-form__item">
                         <label class="c-form__label" for="name">お名前<span class="c-form__required">必須</span></label>
-                        <input name="entry.1652895192" class="c-form__input" id="name" type="text"
-                            required="required" />
+                        <input name="entry.644674703" class="c-form__input" id="name" type="text" required="required" />
                     </div>
                     <div class="c-form__item">
                         <label class="c-form__label" for="field-mail">メールアドレス<span
                                 class="c-form__required">必須</span></label>
-                        <input name="entry.582297986" class="c-form__input" id="field-mail"
+                        <input name="entry.933468707" class="c-form__input" id="field-mail"
                             placeholder="sample@gmail.com" type="email" required="required" />
                     </div>
                     <div class="c-form__item">
                         <label class="c-form__label" for="field-number">電話番号</label>
-                        <input name="entry.2026246450" class="c-form__input" id="field-number" type="number" />
+                        <input name="entry.942676609" class="c-form__input" id="field-number" type="number" />
                     </div>
                     <div class="c-form__item">
                         <label class="c-form__label" for="field-message">お問い合わせ内容<span
                                 class="c-form__required">必須</span></label>
-                        <textarea name="entry.761471955" class="c-form__input" id="field-message"
+                        <textarea name="entry.1553086651" class="c-form__input" id="field-message"
                             required="required"></textarea>
                     </div>
                     <div class="c-form__submit">
-                        <button type="submit">送信する</button>
+                        <button type="submit">送信</button>
                     </div>
                 </form>
 
             </div>
         </section>
+    </main>
 
-        <!-- フッターセクション-->
-        <footer>
+    <!-- フッターセクション-->
+    <footer>
 
-            <div class="footer_block">
-                <ul>
-                    <li><a href="#home">Home
-                        </a></li>
-                    <li><a href="#about">About me</a> </li>
-                    <li><a href="#skill">Skills</a> </li>
-                    <li><a href="#work">Works</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+        <div class="footer_block">
+            <ul>
+                <li><a href="#home">Home
+                    </a></li>
+                <li><a href="#about">About me</a> </li>
+                <li><a href="#skill">Skills</a> </li>
+                <li><a href="#work">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-                <div class="footer_logo">
-                    <h1>MORI ASUKA<br>
-                        PRTFOLIO </h1>
+            <div class="footer_logo">
+                <h1><a href="#home">MORI ASUKA<br>
+                        PRTFOLIO</a> </h1>
 
-                    <div class="insta_icon">
-                        <img src="cording_image/pc_logo_insta@2x.png" alt="インスタのアイコン">
-                    </div>
-                    <p class="footer_copy">© 2023 Mori Asuka</p>
+                <div class="insta_icon">
+                    <img src="images/pc_logo_insta@2x.png" alt="インスタのアイコン">
                 </div>
-
+                <p class="footer_copy">© 2023 Mori Asuka</p>
             </div>
 
+        </div>
 
-        </footer>
 
-    </main>
+    </footer>
+
+
 
     <script>
         $(function () {
@@ -239,8 +260,27 @@
                 $('.sp_btn').toggleClass('open');
             });
         });
-    </script>
 
+        let submitted = false;
+
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+            onload="if(submitted){window.location='./thanks.html';}"></iframe>
+
+        jQuery(function ($) {
+            var fadeIn = $('.fade-in');
+            $(window).on('scroll', function () {
+                $(fadeIn).each(function () {
+                    var offset = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    if (scroll > offset - windowHeight + 150) {
+                        $(this).addClass("scroll-in");
+                    }
+                });
+            });
+        });
+
+    </script>
 </body>
 
 </html>

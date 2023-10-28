@@ -210,6 +210,208 @@ img {
     }
 }
 
+/* aboutMVセクション */
+
+.aboutmv_block h1 {
+    font-family: "futura-pt-bold", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    margin: auto 0;
+    padding-top: 200px;
+}
+
+.aboutmv_image {
+    padding-top: 30px;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 100px;
+}
+
+.aboutmv_block .img {
+    width: 100%;
+    margin: auto 0;
+}
+
+/*  introduceセクション  */
+
+.profile {
+    position: relative;
+    padding-bottom: 100px;
+}
+.profile-obj img {
+    top: 150px;
+    right: 229px;
+    width: 352px;
+    height: 407px;
+    position: absolute;
+}
+
+.about_title {
+    width: 100%;
+    padding-left: 180px;
+}
+
+.about_title .name_japanese {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.about_title .name_english {
+    font-size: 25px;
+}
+.about_title .position {
+    font-size: 16px;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.about_title .top_intro {
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 15px;
+}
+
+/* strengthセクション */
+
+.strength {
+    background-color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.strengthーobj img {
+    top: -80px;
+    left: 10px;
+    width: 260px;
+    height: 250px;
+    position: absolute;
+}
+
+.strength h2 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.strength .translate {
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+    background-color: #fff;
+}
+
+.strength_block {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.strength_block .title {
+    padding-top: 50px;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+    background-color: #fff;
+}
+.strength_block .text02 {
+    font-size: 16px;
+    text-align: lfft;
+    padding-top: 30px;
+    width: 200px;
+    line-height: 30px;
+    background-color: #fff;
+}
+
+/* photoセクション */
+.photo {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.photo-obj1 img {
+    top: 200px;
+    right: 10px;
+    width: 353px;
+    height: 427px;
+    position: absolute;
+}
+.photo-obj2 img {
+    bottom: 3px;
+    left: 50px;
+    width: 304px;
+    height: 243px;
+    position: absolute;
+}
+
+.photo_block {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 20px; /*内側の余白*/
+    background: none; /*元のボックス背景色*/
+    border: 1px solid #666666; /*線の太さ・種類・色*/
+    width: 650px;
+    height: 100px;
+    position: relative; /*配置（基準）*/
+}
+
+.photo_block :after {
+    background-color: rgba(250, 238, 198, 0.9); /*ずらしたボックスの背景色*/
+    border: none;
+    content: "";
+    position: absolute; /*配置（ここを動かす）*/
+    top: 10px; /*上から7pxずらす*/
+    left: 10px; /*左から7pxずらす*/
+    width: 630px;
+    height: 135px;
+    z-index: -1;
+}
+
+.camera_icon img {
+    width: 95px;
+    height: 73px;
+}
+
+.coment {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 5px;
+    text-align: left;
+    padding-left: 20px;
+    background-color: rgba(250, 238, 198, 0.9); /*ずらしたボックスの背景色*/
+}
+
+.photo_garelly {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ph {
+    padding-top: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 30%;
+    z-index: 99;
+}
+
+@media not all and (min-width: 768px) {
+    .ph {
+        width: 100%;
+    }
+
+    .ph:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
 /* フッター セクション */
 
 .footer_block {
@@ -271,34 +473,4 @@ img {
 
 .footer_block ul li + li {
     margin-left: 55px;
-}
-
-@media screen and (max-width: 1100px) {
-    .footer_logo {
-        margin: 0 auto;
-    }
-
-    .footer_logo h1 {
-        font-size: 14px;
-    }
-
-    .footer_logo .insta_icon {
-        width: 25px;
-        height: 25px;
-    }
-
-    .footer_copy {
-        font-size: 10px;
-    }
-
-    .footer_block ul {
-        display: block;
-    }
-
-    .footer_block ul li {
-        font-size: 16px;
-        padding-top: 30px;
-        padding-left: 10px;
-        text-align: left;
-    }
 }
