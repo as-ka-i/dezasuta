@@ -60,6 +60,65 @@ img {
     }
 }
 
+/* ローディングページ */
+
+/* 画面全体の設定 */
+.loader-bg {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background: #fff;
+}
+/* ローディングアニメーションの設定 */
+.loader {
+    text-align: center;
+}
+
+.loader img {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    padding-top: 200px;
+    animation: blink 2s infinite linear;
+}
+.loading_text {
+    font-size: 21px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    background: #fff;
+    opacity: 0;
+    animation: blink 2s infinite linear;
+}
+
+#loading_count {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .loader img {
+        width: 200px;
+        height: 200px;
+    }
+    .loading_text {
+        font-size: 16px;
+    }
+}
+
 /*ヘッダー*/
 .header_wrap {
     display: flex;
@@ -70,7 +129,7 @@ img {
     /* widthに収める */
     box-sizing: border-box;
     padding-top: 15px;
-    padding-bottom: 40px;
+    padding-bottom: 15px;
     padding-right: 15%;
     padding-left: 15%;
     background-color: #fff;
@@ -112,9 +171,16 @@ img {
     display: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
     .pc_nav {
         display: none;
+    }
+
+    .header_wrap {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 10%;
+        padding-left: 10%;
     }
 
     .header_wrap h1 {
@@ -133,7 +199,7 @@ img {
     /* メニューの横棒  spanタグで擬似要素*/
     .sp_btn {
         position: absolute;
-        top: 15 px;
+        top: 15px;
         right: 25px;
         display: block;
         height: 23px;
@@ -207,6 +273,7 @@ img {
         font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
             "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
         text-align: center;
+        background-color: unset;
     }
 }
 
@@ -220,7 +287,8 @@ img {
     width: 100%;
     /* widthに収める */
     box-sizing: border-box;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     padding-right: 10%;
     padding-left: 10%;
     background-color: #f4c891;
@@ -274,6 +342,11 @@ img {
 }
 
 @media screen and (max-width: 1100px) {
+    .footer_block {
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+
     .footer_logo {
         margin: 0 auto;
     }
@@ -300,5 +373,9 @@ img {
         padding-top: 30px;
         padding-left: 10px;
         text-align: left;
+    }
+
+    .footer_block ul li + li {
+        margin-left: 0px;
     }
 }

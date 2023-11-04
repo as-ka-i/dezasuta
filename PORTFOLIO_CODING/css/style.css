@@ -7,7 +7,7 @@
 
 .title {
     position: absolute;
-    top: 35%;
+    top: 28%;
     left: 65%;
     font-size: 40px;
     line-height: 65px;
@@ -19,9 +19,10 @@
         "ＭＳ 明朝", serif;
 }
 
+/* フェードイン */
 .fade-in {
     opacity: 0;
-    transition-duration: 500ms;
+    transition-duration: 2000ms;
     transition-property: opacity, transform;
 }
 
@@ -33,10 +34,11 @@
     opacity: 1;
     transform: translate(0, 0);
 }
+/* ここまで */
 
 .mv_image img {
     width: 100%;
-    padding: 80px 0;
+    padding-top: 80px;
     margin: auto 0;
     opacity: 0.8;
 }
@@ -117,24 +119,25 @@
     .sp_mv_image img {
         display: block;
         width: 100%;
-        padding-top: 80px;
+        padding-top: 60px;
         margin: auto 0;
         opacity: 0.8;
     }
     .title {
         writing-mode: vertical-rl;
         font-size: 20px;
-        letter-spacing: 15px;
-        line-height: 30px;
-        top: 22%;
+        letter-spacing: 10px;
+        line-height: 25px;
+        top: 18%;
         left: 78%;
         z-index: 1;
     }
 
     .concept {
         font-size: 14px;
-        line-height: 40px;
+        line-height: 30px;
         letter-spacing: 5px;
+        padding-top: 50px;
     }
 }
 
@@ -145,13 +148,13 @@
 
 .about_block {
     width: 100%;
-    padding-right: 10px;
-    padding-left: 15%;
+    margin: 0 auto;
     display: flex; /*横並び*/
     justify-content: flex-end;
     padding-top: 100px;
     padding-bottom: 100px;
     max-width: 1000px;
+    box-sizing: border-box;
 }
 
 .about_block .image img {
@@ -164,7 +167,6 @@
 .about_block .about_title {
     width: 100%;
     padding-top: 200px;
-    padding-left: 100px;
 }
 
 .about_title h2 {
@@ -196,37 +198,44 @@
 .about_title .more {
     padding-top: 50px;
     margin-left: 70%;
-    width: 46px;
-    height: 13px;
+    width: 70px;
+    height: 17px;
 }
 
 .sp_about_image img {
     display: none;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
     .about_block {
         display: block;
+        width: 100%;
     }
     .about_image img {
         display: none;
     }
 
     .about_title h2 {
-        padding-top: -100px;
+        padding-top: 0px;
         font-size: 46px;
         margin: 0 auto;
+        text-align: center;
     }
 
     .sp_about_image img {
         display: block;
         width: 315px;
         height: 300px;
-        padding-left: 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about_title {
+        margin: 0 auto;
+        text-align: center;
     }
 
     .about_title .name_japanese {
         font-size: 16px;
-        margin: 0 auto;
     }
     .about_title .name_english {
         display: none;
@@ -234,43 +243,43 @@
     .about_title .position {
         font-size: 9px;
         display: block;
-        padding-top: 5px;
-        margin: 0 auto;
+        padding-top: 8px;
     }
 
     .about_title .sp_name_english {
         display: block;
         font-size: 10px;
         padding-bottom: 8px;
-        margin: 0 auto;
     }
 
     .about_title .top_intro {
         font-size: 14px;
         line-height: 30px;
         padding-top: 15px;
-        margin: 0 auto;
+        display: inline-block;
         text-align: left;
     }
+
     .about_title .more {
         padding-top: 30px;
-        margin-left: 25%;
-        width: 38px;
-        height: 20px;
+        margin-right: 30%;
+        width: 42px;
+        height: 24px;
     }
 }
 /* skillsセクション */
 
 .skill {
-    background-color: #fff;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     position: relative;
+    background-color: #fff;
 }
 .skill-obj img {
-    top: 200px;
-    right: 10px;
+    top: 280px;
+    right: 0px;
     width: 382px;
     height: 449px;
+    opacity: 0.8;
     position: absolute;
 }
 .skill h2 {
@@ -279,7 +288,7 @@
     padding-top: 100px;
     margin: auto 0;
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .skill_block {
@@ -287,7 +296,8 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    background-color: #fff;
+
+    position: relative;
 }
 
 .skill_block .sk {
@@ -295,13 +305,13 @@
     font-size: 25px;
     font-weight: normal;
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
 }
 .skill_block .sk_english {
     font-size: 14px;
     text-align: center;
     padding-top: 10px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
 }
 .skill_block .icon {
     padding-top: 20px;
@@ -309,7 +319,7 @@
     padding-left: 35%;
     width: 35%;
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .skill_block .text01 {
@@ -319,10 +329,10 @@
     margin-left: 20%;
     padding-top: 30px;
 
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
     .skill-obj img {
         top: 1100px;
         right: 10px;
@@ -349,6 +359,7 @@
     .skill_block .icon {
         width: 190px;
         height: 140px;
+        padding-left: 30%;
     }
 
     .skill_block .text01 {
@@ -367,7 +378,7 @@
 .work_block h2 {
     font-size: 50px;
     font-weight: bold;
-    padding-top: 50px;
+    padding-top: 100px;
     text-align: center;
     margin: auto;
 }
@@ -390,7 +401,7 @@
     width: 70px;
     height: 17px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
     .work_block h2 {
         font-size: 46px;
     }
@@ -401,8 +412,8 @@
 
     .work_block .more {
         margin: 0 auto;
-        width: 46px;
-        height: 13px;
+        width: 42px;
+        height: 24px;
     }
 }
 
@@ -414,15 +425,16 @@
 
 .contact-obj1 img {
     top: 100px;
-    left: 10px;
+    left: 0;
     width: 262px;
     height: 252px;
+    opacity: 0.8;
     position: absolute;
 }
 
 .contact-obj2 img {
     top: 600px;
-    right: 10px;
+    right: 0;
     width: 432px;
     height: 387px;
     position: absolute;
@@ -494,7 +506,7 @@ textarea.c-form__input {
     cursor: pointer;
 }
 .c-form__submit button:hover {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.15);
     background-color: rgba(58, 58, 80, 0.75);
 }
 
@@ -510,7 +522,7 @@ textarea.c-form__input {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
     .contact-obj1 img {
         top: -100px;
         left: 10px;
@@ -546,7 +558,11 @@ textarea.c-form__input {
     left: 10px;
     width: 318px;
     height: 300px;
+    opacity: 0.8;
     position: absolute;
+}
+.sp_form-obj {
+    display: none;
 }
 
 .entrycolumn h2 {
@@ -556,7 +572,7 @@ textarea.c-form__input {
     margin: 2em auto;
     padding-top: 20px; /*内側の余白*/
     background: none; /*元のボックス背景色*/
-    border: 1px solid #666666; /*線の太さ・種類・色*/
+    border: 1px solid #818181; /*線の太さ・種類・色*/
     width: 830px;
     height: 65px;
 
@@ -604,4 +620,50 @@ textarea.c-form__input {
 .backhome button:hover {
     color: #fff;
     background-color: rgba(58, 58, 80, 0.75);
+    border: solid 1px rgba(58, 58, 80, 0.75);
+}
+
+@media screen and (max-width: 767px) {
+    .thankspage {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .form-obj img {
+        display: none;
+    }
+
+    .sp_form-obj {
+        display: block;
+        top: 360px;
+        left: 10px;
+        width: 120px;
+        height: 133px;
+        opacity: 0.8;
+        position: absolute;
+    }
+
+    .entrycolumn h2 {
+        font-size: 16px;
+        width: 220px;
+        height: 45px;
+        z-index: 99;
+        padding-top: 30px;
+    }
+
+    .entrycolumn h2:after {
+        width: 225px;
+        height: 72px;
+    }
+
+    .thanks_text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .backhome {
+        font-size: 12px;
+
+        padding-top: 80px;
+    }
 }
