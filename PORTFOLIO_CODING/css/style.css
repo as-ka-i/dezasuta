@@ -20,7 +20,9 @@
 }
 
 /* フェードイン */
-.fade-in {
+.fade-in,
+.fade-in-01,
+.fade-in-02 {
     opacity: 0;
     transition-duration: 2000ms;
     transition-property: opacity, transform;
@@ -28,6 +30,10 @@
 
 .fade-in-down {
     transform: translate(0, -50px);
+}
+
+.fade-in-up {
+    transform: translate(0, 50px);
 }
 
 .scroll-in {
@@ -48,7 +54,7 @@
     line-height: 50px;
     letter-spacing: 5px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 50px;
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
         "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
