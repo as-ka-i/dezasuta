@@ -139,7 +139,7 @@ img {
     /* メニューの横棒  spanタグで擬似要素*/
     .sp_btn {
         position: absolute;
-        top: 15 px;
+        top: 15px;
         right: 25px;
         display: block;
         height: 23px;
@@ -219,7 +219,7 @@ img {
 
 /* aboutMVセクション */
 
-.aboutmv_block h1 {
+.aboutmv_block h2 {
     font-family: "futura-pt-bold", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -231,14 +231,9 @@ img {
 
 .aboutmv_image {
     padding-top: 30px;
-    padding-left: 180px;
-    padding-right: 180px;
+    max-width: 1000px;
+    margin: 0 auto;
     padding-bottom: 100px;
-}
-
-.aboutmv_block .img {
-    width: 100%;
-    margin: auto 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -268,8 +263,8 @@ img {
 }
 
 .about_title {
-    width: 100%;
-    padding-left: 180px;
+    max-width: 1000px;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -281,6 +276,7 @@ img {
 
 .about_title .name_english {
     font-size: 25px;
+    font-weight: normal;
 }
 .about_title .position {
     font-size: 16px;
@@ -327,7 +323,7 @@ img {
     padding-bottom: 100px;
     position: relative;
 }
-.strengthーobj img {
+.strength_obj {
     top: -80px;
     left: 10px;
     width: 260px;
@@ -339,14 +335,14 @@ img {
     font-size: 50px;
     text-align: center;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: transparent;
 }
 .strength .translate {
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
     padding-top: 15px;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .strength_block {
@@ -354,7 +350,7 @@ img {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .strength_block .title {
@@ -362,19 +358,19 @@ img {
     font-size: 36px;
     font-weight: normal;
     text-align: center;
-    background-color: #fff;
+    background-color: transparent;
 }
 .strength_block .text02 {
     font-size: 16px;
-    text-align: lfft;
+    text-align: left;
     padding-top: 30px;
     width: 200px;
     line-height: 30px;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 @media screen and (max-width: 767px) {
-    .strengthーobj img {
+    .strength_obj {
         width: 161px;
         height: 152px;
         top: 300px;
@@ -399,7 +395,7 @@ img {
     }
     .strength_block .text02 {
         font-size: 14px;
-        width: 400px;
+        width: 350px;
         text-align: left;
         line-height: 30px;
         margin: 0 auto;

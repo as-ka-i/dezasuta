@@ -88,9 +88,6 @@ img {
 /* ローディングアニメーションの設定 */
 .loader {
     text-align: center;
-}
-
-.loader img {
     width: 300px;
     height: 300px;
     opacity: 0;
@@ -118,7 +115,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-    .loader img {
+    .loader {
         width: 200px;
         height: 200px;
     }
@@ -126,7 +123,7 @@ img {
         font-size: 16px;
     }
     .progressbar-text {
-        top: 38% !important;
+        top: 40% !important;
         padding-left: 3% !important;
     }
 }
